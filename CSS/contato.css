@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&family=Sarala&display=swap');
+
+body{
+    font-family: 'Salara', sans-serif;
+    font-size: 18px;
+    color: #FFF2E7;
+}
+
+input, select, textarea, button {
+    border-radius: 5px;
+}
+
+label{
+    display: block;
+    margin: 0 auto;
+}
+
+.conteudo-principal{
+    border-top: #FFF2E7 solid 0.4px;
+    padding: 32px;
+}
+
+.conteudo-principal-form-titulo{
+    font-family: 'Righteous', cursive;
+    font-weight: 400;
+    color: #fff;
+    font-size: 40px;
+    margin-bottom: 10px;
+}
+
+.conteudo-principal-form-paragrafo{
+    font-family: 'Salara', sans-serif;
+    color: #FFF2E7;
+    font-weight: 400;
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.conteudo-principal-form-grupo-campo input:focus, .campo select:focus, .campo textarea:focus{
+    background: #fff1f2;
+}
+
+fieldset{
+    border: 0;
+    display: block;
+}
+
+.conteudo-principal-form-grupo textarea {
+    display: block;
+}
+
+.conteudo-principal-form-grupo:before, .conteudo-principal-form-grupo:after{
+    border: 0;
+}
+
+.conteudo-principal-form-grupo:after {
+    clear: both;
+}
+
+.conteudo-principal-form-botao{
+    color: #FFFFFF;
+    font-family: 'Salara', sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    background: rgba(215, 130, 255, 0.5);
+    width: 115px;
+    height: 45px;
+    border: none;
+    box-shadow: 4px 5px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    margin-right: 25px;
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 20px;
+}
+
+.conteudo-principal-form-botao:hover{
+    cursor: pointer;
+    background: rgba(215, 130, 255, 0.2);
+}

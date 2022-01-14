@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beyond the universe | Contato</title>
+    <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <link rel="stylesheet" href="CSS/contato.css" type="text/css">
+    <script src="Scripts/main.js"></script>
+</head>
+<body>
+    <header id="cabecalho">
+        <img class="cabecalho-imagem" src="Imagens/Logo.png" alt="Logo fictício da empresa desenvolvedora do jogo">
+        <nav class="cabecalho-menu">
+            <a class="cabecalho-menu-item" href="index.html">Sobre</a>
+            <a class="cabecalho-menu-item" href="#">Contato</a>
+            <button class="cabecalho-menu-botao" onclick="popup()">jogar</button>
+        </nav>
+        <a href="#cabecalho" class="cabecalho-topo"><img id="cabecalho-topo-imagem" src="Imagens/Beyond-Nave-Parada.png" alt="Voltar para o topo" onmousemove="alteranave('Beyond-Nave-Ligada')" onmouseout="alteranave('Beyond-Nave-Parada')"></a>
+    </header>
+
+    <main class="conteudo-principal">
+        <form action="" method="post" class="conteudo-principal-form">
+
+            <h1 class="conteudo-principal-form-titulo">Alguma dúvida tripulante?</h1>
+            <p class="conteudo-principal-form-paragrafo">Envie um sinal intergalactico que em breve entraremos em contato</p>
+
+            <fieldset class="conteudo-principal-form-grupo">
+                <div class="conteudo-principal-form-grupo-campo">
+                    <label for="nome">Nome</label>
+                    <input type="text" name="nome" id="nome" required placeholder="Ex: Fulano">
+                </div><br>
+
+                <div class="conteudo-principal-form-grupo-campo">
+                    <label for="sobrenome">Sobrenome</label>
+                    <input type="text" name="sobrenome" id="sobrenome" required placeholder="Ex: Da Silva">
+                </div><br>
+
+                <div class="conteudo-principal-form-grupo-campo">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email" required placeholder="Ex: Fulano@gmail.com">
+                </div><br>
+            </fieldset>
+
+            <fieldset class="conteudo-principal-form-grupo">
+                <div class="conteudo-principal-form-grupo-campo">
+                    <label for="motivo">Motivo</label>
+                    <select id="motivo" required>
+                      <option selected disabled value="">Selecione</option>
+                      <option>Sugestão</option>
+                      <option>Pergunta</option>
+                      <option>Dúvida</option>
+                      <option>Problema</option>
+                    </select>
+                </div><br>
+    
+                <div class="conteudo-principal-form-grupo-campo">
+                    <label for="mensagem">Digite sua mensagem:</label>
+                    <textarea rows="6" style="width: 26em" id="mensagem" name="mensagem" placeholder="Digite aqui a sua mensagem"></textarea>
+                </div>
+            </fieldset> <br>
+
+            <div class="conteudo-principal-form-grupo-campo">
+                <label>Deseja receber emails com atualizações do jogo <strong>Beyond the universe?</strong></label>
+                <label>
+                    <input type="radio" name="atualizacao" value="Sim" checked>Sim</label>
+                <label>
+                    <input type="radio" name="atualizacao" value="Nao">Não</label>
+            </div><br>
+
+            <button class="conteudo-principal-form-botao" type="submit" onsubmit="">Enviar</button>            
+        </form>
+    </main>
+
+    <footer class="rodape">
+        <img class="rodape-imagem" src="Imagens/Veado.png" alt="Logo fictício da empresa desenvolvedora do jogo">
+    </footer>
+
+</body>
+</html>

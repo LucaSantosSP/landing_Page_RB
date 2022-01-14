@@ -3,31 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>--- Bot</title>
+    <title>Beyond the universe | Jogue agora</title>
     <link rel="stylesheet" href="CSS/style.css" type="text/css">
+    <script src="Scripts/main.js"></script>
 </head>
 <body>
-    <header class="cabecalho">
-        <img class="cabecalho-imagem" src="Imagens/Logo.svg" alt="Logo fictício da empresa desenvolvedora do jogo">
+    <header id="cabecalho">
+        <img class="cabecalho-imagem" src="Imagens/Logo.png" alt="Logo fictício da empresa desenvolvedora do jogo">
         <nav class="cabecalho-menu">
             <a class="cabecalho-menu-item" href="#conteudo-secundario-titulo">Sobre</a>
-            <a class="cabecalho-menu-item" href="#">Contato</a>
-            <button class="cabecalho-menu-botao">jogar</button>
+            <a class="cabecalho-menu-item" href="contato.html">Contato</a>
+            <button class="cabecalho-menu-botao" onclick="popup()">jogar</button>
         </nav>
+        <a href="#cabecalho" class="cabecalho-topo"><img id="cabecalho-topo-imagem" src="Imagens/Beyond-Nave-Parada.png" alt="Voltar para o topo" onmousemove="alteranave('Beyond-Nave-Ligada')" onmouseout="alteranave('Beyond-Nave-Parada')"></a>
     </header>
 
     <main class="conteudo">
         <section class="conteudo-principal">
             <div class="conteudo-principal-escrito">
                 <h1 class="conteudo-principal-escrito-titulo">Beyond the universe</h1>
-                <p class="conteudo-secundario-paragrafo">Beyond the universe é um jogo de aventura em um mundo aberto onde junto com sua tripulação você vai explorar todo o universo.</p>
+                <p class="conteudo-principal-paragrafo">Beyond the universe é um jogo de aventura em um mundo aberto onde junto com sua tripulação você vai explorar todo o universo.</p>
                 <div class="conteudo-secundario-paragrafo-botoes">
-                    <button class="conteudo-principal-escrito-botao">Jogar agora</button>
+                    <button class="conteudo-principal-escrito-botao" onclick="popup()">Jogar agora</button>
                     <a href="#conteudo-secundario-titulo"><button class="conteudo-principal-escrito-botao2">Saiba mais</button></a>
                 </div>
             </div>
             <div>
-                <img class="conteudo-principal-imagem" src="Imagens/Beyond-Princ.svg" alt="Um circulo roxo.">
+                <img class="conteudo-principal-imagem" src="Imagens/Beyond-Princ.png" alt="Um circulo roxo.">
             </div>
         </section>
 
@@ -35,17 +37,17 @@
             <h2 id="conteudo-secundario-titulo">Por que jogar Beyond the universe?</h2>
             <div class="conteudo-secundario-motivos">
                 <div class="conteudo-secundario-motivo">
-                    <img src="Imagens/Beyond-Nave.svg" alt="Imagem de um retângulo">
+                    <img src="Imagens/Beyond-Nave.gif" alt="Gif de uma pequena nave e algumas opções de melhorias">
                     <h3 class="conteudo-secundario-titulo">Aprimore sua nave</h3>
                     <p class="conteudo-secundario-paragrafo">Compre e aprimore suas naves para se tornar mais poderoso.</p>
                 </div>
                 <div class="conteudo-secundario-motivo">
-                    <img src="Imagens/Beyond-Nave.svg" alt="Imagem de um retângulo">
+                    <img src="Imagens/Tripulante.gif" alt="Gif de um cozinheiro fritando um ovo">
                     <h3 class="conteudo-secundario-titulo">Contrate tripulantes</h3>
                     <p class="conteudo-secundario-paragrafo">Tripulantes podem trabalhar na cozinha, criar novas ferramentas, operar armas, consertar a nave, etc.</p>
                 </div>
                 <div class="conteudo-secundario-motivo">
-                    <img src="Imagens/Beyond-Nave.svg" alt="Imagem de um retângulo">
+                    <img src="Imagens/Criaturas.gif" alt="Gif com diversas com variedade de criaturas">
                     <h3 class="conteudo-secundario-titulo">Descubra novas criaturas</h3>
                     <p class="conteudo-secundario-paragrafo">Descubra novas criaturas e ganhe prêmios. Mas tome cuidado, criaturas são imprevisíveis.</p>
                 </div>
@@ -54,7 +56,7 @@
     </main>
 
     <footer class="rodape">
-        <img class="rodape-imagem" src="Imagens/Logo.svg" alt="Logo fictício da empresa desenvolvedora do jogo">
+        <img class="rodape-imagem" src="Imagens/Veado.png" alt="Logo fictício da empresa desenvolvedora do jogo">
     </footer>
 
 </body>
